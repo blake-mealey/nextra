@@ -10,6 +10,39 @@
   --shiki-token-string-expression: var(--shiki-token-string);
   --shiki-token-punctuation: oklch(24.78% 0 0);
   --shiki-token-link: var(--shiki-token-string);
+
+  --shiki-color-ansi-black: #333333;
+  --shiki-color-ansi-black-dim: #33333380;
+  --shiki-color-ansi-red: #D32F2F;
+  --shiki-color-ansi-red-dim: #D32F2F80;
+  --shiki-color-ansi-green: #77cc00;
+  --shiki-color-ansi-green-dim: #77cc0080;
+  --shiki-color-ansi-yellow: #f29718;
+  --shiki-color-ansi-yellow-dim: #f2971880;
+  --shiki-color-ansi-blue: #1976D2; /* TODO verify */
+  --shiki-color-ansi-blue-dim: #1976D280;
+  --shiki-color-ansi-magenta: #9966cc;
+  --shiki-color-ansi-magenta-dim: #9966cc80;
+  --shiki-color-ansi-cyan: #4dbf99;
+  --shiki-color-ansi-cyan-dim: #4dbf9980;
+  --shiki-color-ansi-white: #c7c7c7;
+  --shiki-color-ansi-white-dim: #c7c7c780;
+  --shiki-color-ansi-bright-black: #a1a1a1;
+  --shiki-color-ansi-bright-black-dim: #a1a1a180;
+  --shiki-color-ansi-bright-red: #d6656a;
+  --shiki-color-ansi-bright-red-dim: #d6656a80;
+  --shiki-color-ansi-bright-green: #a3d900;
+  --shiki-color-ansi-bright-green-dim: #a3d90080;
+  --shiki-color-ansi-bright-yellow: #e7c547;
+  --shiki-color-ansi-bright-yellow-dim: #e7c54780;
+  --shiki-color-ansi-bright-blue: #1976D2;
+  --shiki-color-ansi-bright-blue-dim: #1976D280;
+  --shiki-color-ansi-bright-magenta: #a37acc;
+  --shiki-color-ansi-bright-magenta-dim: #a37acc80;
+  --shiki-color-ansi-bright-cyan: #57d9ad;
+  --shiki-color-ansi-bright-cyan-dim: #57d9ad80;
+  --shiki-color-ansi-bright-white: #7E7E7E;
+  --shiki-color-ansi-bright-white-dim: #7E7E7E80;
 }
 
 .dark {
@@ -23,4 +56,6 @@
   --shiki-token-string-expression: oklch(69.28% 0.179 143.2);
   --shiki-token-punctuation: oklch(79.21% 0 0);
   --shiki-token-link: var(--shiki-token-string);
+
+  /* TODO: ANSI colors */
 }
