@@ -1,5 +1,86 @@
 # nextra
 
+## 2.4.2
+
+### Patch Changes
+
+- 16e562d: fix Next.js 13.3.1 compatibility for SyntaxError: Named export 'existsSync' not found.
+
+## 2.4.1
+
+### Patch Changes
+
+- a992ce1: do not add dynamic routes to pageMap
+
+## 2.4.0
+
+### Minor Changes
+
+- 0a50cad: support symlinked pages
+
+### Patch Changes
+
+- 545bd7c: Remove `.mdx?` of local links only
+- 259bfbc: do not throw error when `output: 'export'` is specified in `next.config.js`
+
+## 2.3.0
+
+### Minor Changes
+
+- 6ea1caf: fix crash of dev server when `_meta.js` contains errors
+
+  disallow caching of `_meta.js` on dev env
+
+  set minimal `node` as `16`
+
+- 76e8b0f: support custom heading id via `# my very long heading... [#my-custom-heading]` syntax https://github.com/shuding/nextra/pull/1645
+
+### Patch Changes
+
+- 0dd028a: Prints the warning inline instead of the current behavior which includes a stack trace.
+
+## 2.2.20
+
+### Patch Changes
+
+- 2e48307: export `normalizePages` from `nextra/normalize-pages`, `useFSRoute` from `nextra/hooks` (can be useful for custom theme)
+- e4c8b6d: fix crash of dev server when \_meta.json is malformed
+
+## 2.2.19
+
+### Patch Changes
+
+- e41cbbc: fix `transformPageOpts` with \_app.mdx, `pageMap` was still included even it was removed in `transformPageOpts`
+- a1e59b2: Support Markdown links with query or anchor.
+
+## 2.2.18
+
+### Patch Changes
+
+- 9bd2d59: remove the .md and .mdx extension from links
+- c2287e1: fix buildDynamicMDX options passed to compileMdx
+- 90cb6b8: do not auto create `_app.mdx` if missing
+
+## 2.2.17
+
+### Patch Changes
+
+- 4a66366: fix TypeError: Cannot read properties of undefined (reading '/') with \_app.mdx while editing theme.config, \_meta.json or adding/removing md/mdx files
+
+## 2.2.16
+
+### Patch Changes
+
+- d495e5f: introduce `_app.mdx` for better performance and smallest `.next/static/chunks` size
+
+## 2.2.15
+
+### Patch Changes
+
+- d5aa17c: do not redirect `.txt` files in nextra's `locales` middleware
+- 016828e: do not redirect .mp4 in locales middleware
+- b3219c3: do not override `className` for `<Td />`, `<Th />` and `<Tr />` components
+
 ## 2.2.14
 
 ### Patch Changes

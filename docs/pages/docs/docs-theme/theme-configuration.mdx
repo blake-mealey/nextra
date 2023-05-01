@@ -116,10 +116,14 @@ import { useConfig } from 'nextra-theme-docs'
 
 export default {
   head: () => {
-    const { asPath } = useRouter()
+    const { asPath, defaultLocale, locale } = useRouter()
     const { frontMatter } = useConfig()
+    const url =
+      'https://my-app.com' +
+      (defaultLocale === locale ? asPath : `/${locale}${asPath}`)
+
     return <>
-      <meta property="og:url" content={`https://my-app.com${asPath}`} />
+      <meta property="og:url" content={url} />
       <meta property="og:title" content={frontMatter.title || 'Nextra'} />
       <meta property="og:description" content={frontMatter.description || 'The next site builder'} />
     </>
@@ -249,7 +253,7 @@ Check out [Page Configuration](/docs/docs-theme/page-configuration#navbar-items)
   directories: Item[]
 }>`, ''],
   ['search.emptyResult', 'React.ReactNode | React.FC', 'Not found text'],
-  ['search.loading', 'string | (() => string)', 'Loading text'],
+  ['search.loading', 'React.ReactNode | React.FC', 'Loading text'],
   ['search.error', 'string | (() => string)', 'Error text'],
   ['search.placeholder', 'string | (() => string)', 'Placeholder text'],
 ]}/>
@@ -394,6 +398,7 @@ Show a table of contents on the right side of the page. It’s useful for naviga
   ['toc.extraContent', 'React.ReactNode | React.FC', 'Display extra content below the TOC content.'],
   ['toc.float', 'boolean', 'Float the TOC next to the content.'],
   ['toc.title', 'React.ReactNode | React.FC', 'Title of the TOC sidebar. By default it’s “On This Page”.'],
+  ['toc.headingComponent', 'React.FC<{ id: string, children: string }>', 'Custom renderer of TOC headings.'],
 ]}/>
 
 #### Floating TOC
@@ -483,6 +488,31 @@ export default {
 }
 ```
 
+## Theme Switch
+
+<OptionTable options={[
+  ['themeSwitch.component', 'React.ReactNode | React.FC<{ lite?: boolean, className?: string }>', 'Component to render the theme switch.'],
+  ['themeSwitch.useOptions', 'ThemeOptions | () => ThemeOptions', 'Options in the theme switch.'],
+]}/>
+
+### Options
+
+You are able to customize the option names for localization or other purposes:
+
+```jsx
+export default {
+  themeSwitch: {
+    useOptions() {
+      return {
+        light: 'Light',
+        dark: 'Dark',
+        system: 'System'
+      }
+    }
+  }
+}
+```
+
 ## Error Pages
 
 ### 404 - Not Found
@@ -496,3 +526,4 @@ This isn’t supported by all browsers, but it’s a nice way to customize the f
 <OptionTable options={[
   ['faviconGlyph', `string`, 'The glyph to use as the favicon.'],
 ]}/>
+

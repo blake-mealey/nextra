@@ -1,5 +1,95 @@
 # nextra-theme-blog
 
+## 2.4.2
+
+### Patch Changes
+
+- Updated dependencies [16e562d]
+  - nextra@2.4.2
+
+## 2.4.1
+
+### Patch Changes
+
+- Updated dependencies [a992ce1]
+  - nextra@2.4.1
+
+## 2.4.0
+
+### Patch Changes
+
+- Updated dependencies [545bd7c]
+- Updated dependencies [0a50cad]
+- Updated dependencies [259bfbc]
+  - nextra@2.4.0
+
+## 2.3.0
+
+### Minor Changes
+
+- 6a79462: add new option `dateFormatter`
+- 76e8b0f: support custom heading id via `# my very long heading... [#my-custom-heading]` syntax https://github.com/shuding/nextra/pull/1645
+
+### Patch Changes
+
+- Updated dependencies [0dd028a]
+- Updated dependencies [6ea1caf]
+- Updated dependencies [76e8b0f]
+  - nextra@2.3.0
+
+## 2.2.20
+
+### Patch Changes
+
+- Updated dependencies [2e48307]
+- Updated dependencies [e4c8b6d]
+  - nextra@2.2.20
+
+## 2.2.19
+
+### Patch Changes
+
+- Updated dependencies [e41cbbc]
+- Updated dependencies [a1e59b2]
+  - nextra@2.2.19
+
+## 2.2.18
+
+### Patch Changes
+
+- Updated dependencies [9bd2d59]
+- Updated dependencies [c2287e1]
+- Updated dependencies [90cb6b8]
+  - nextra@2.2.18
+
+## 2.2.17
+
+### Patch Changes
+
+- Updated dependencies [4a66366]
+  - nextra@2.2.17
+
+## 2.2.16
+
+### Patch Changes
+
+- b94245a: Reverts #1417 "force theme to light if darkMode: false was set"
+- d495e5f: introduce `_app.mdx` for better performance and smallest `.next/static/chunks` size
+- Updated dependencies [d495e5f]
+  - nextra@2.2.16
+
+## 2.2.15
+
+### Patch Changes
+
+- 2e441b7: open http:// links in new window
+- da585a8: force theme to `light` if `darkMode: false` was set
+- 3e9e54f: hide unnecessary parts of the pages when being printed
+- Updated dependencies [d5aa17c]
+- Updated dependencies [016828e]
+- Updated dependencies [b3219c3]
+  - nextra@2.2.15
+
 ## 2.2.14
 
 ### Patch Changes

@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import 'focus-visible'
 import cn from 'clsx'
 import { MDXProvider } from 'nextra/mdx'
-import { useMounted } from 'nextra/hooks'
+import { useMounted, useFSRoute } from 'nextra/hooks'
 
 import './polyfill'
 import {
@@ -19,9 +19,10 @@ import {
 } from './components'
 import { getComponents } from './mdx-components'
 import { ActiveAnchorProvider, ConfigProvider, useConfig } from './contexts'
-import type { PageTheme } from './constants'
+import type { PageTheme } from 'nextra/normalize-pages'
+import { normalizePages } from 'nextra/normalize-pages'
 import { DEFAULT_LOCALE, PartialDocsThemeConfig } from './constants'
-import { useFSRoute, normalizePages, renderComponent } from './utils'
+import { renderComponent } from './utils'
 
 interface BodyProps {
   themeContext: PageTheme
@@ -32,8 +33,10 @@ interface BodyProps {
 }
 
 const classes = {
-  toc: cn('nextra-toc nx-order-last nx-hidden nx-w-64 nx-shrink-0 xl:nx-block'),
-  main: cn('nx-w-full nx-overflow-x-hidden nx-break-words')
+  toc: cn(
+    'nextra-toc nx-order-last nx-hidden nx-w-64 nx-shrink-0 xl:nx-block print:nx-hidden'
+  ),
+  main: cn('nx-w-full nx-break-words')
 }
 
 const Body = ({
@@ -253,14 +256,19 @@ export default function Layout({
 export { useConfig, PartialDocsThemeConfig as DocsThemeConfig }
 export { useMDXComponents } from 'nextra/mdx'
 export { useTheme } from 'next-themes'
+export { Link } from './mdx-components'
 export {
   Bleed,
   Callout,
   Collapse,
   NotFoundPage,
   ServerSideErrorPage,
+  Steps,
   Tabs,
   Tab,
+  Cards,
+  Card,
+  FileTree,
   Navbar,
   SkipNavContent,
   SkipNavLink,

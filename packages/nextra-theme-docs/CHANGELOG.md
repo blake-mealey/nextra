@@ -1,5 +1,124 @@
 # nextra-theme-docs
 
+## 2.4.2
+
+### Patch Changes
+
+- 41d4aa0: remove `nx-overflow-x-hidden` from main content
+- Updated dependencies [16e562d]
+  - nextra@2.4.2
+
+## 2.4.1
+
+### Patch Changes
+
+- 2df6e91: Use config.useOptions text as the Select selected name on Theme Switch
+- 7989cc5: fix regression of sidebar style for folder
+- Updated dependencies [a992ce1]
+  - nextra@2.4.1
+
+## 2.4.0
+
+### Minor Changes
+
+- 6973b21: Add new option `headingComponent` to the TOC
+
+### Patch Changes
+
+- 2ff360f: use `<span />` instead `<div />` inside `<button />` for local switch button
+- e3664c4: fix uncrawable links in sidebar, use button when link don't have href because it impacts on SEO
+
+  remove useless prop children from `<FileTree.File />` component
+
+- 8e00549: export `<Link />` component
+- 61b4f0c: Wrap long section headers in TOC properly
+- Updated dependencies [545bd7c]
+- Updated dependencies [0a50cad]
+- Updated dependencies [259bfbc]
+  - nextra@2.4.0
+
+## 2.3.0
+
+### Minor Changes
+
+- 707a709: Improve sidebar colors accessibility
+- 76e8b0f: support custom heading id via `# my very long heading... [#my-custom-heading]` syntax https://github.com/shuding/nextra/pull/1645
+
+### Patch Changes
+
+- fb0b19b: Do not focus search when currently focusing a HTMLElement with contenteditable active
+- Updated dependencies [0dd028a]
+- Updated dependencies [6ea1caf]
+- Updated dependencies [76e8b0f]
+  - nextra@2.3.0
+
+## 2.2.20
+
+### Patch Changes
+
+- 2e48307: export `normalizePages` from `nextra/normalize-pages`, `useFSRoute` from `nextra/hooks` (can be useful for custom theme)
+- Updated dependencies [2e48307]
+- Updated dependencies [e4c8b6d]
+  - nextra@2.2.20
+
+## 2.2.19
+
+### Patch Changes
+
+- Updated dependencies [e41cbbc]
+- Updated dependencies [a1e59b2]
+  - nextra@2.2.19
+
+## 2.2.18
+
+### Patch Changes
+
+- f29358a: always show `Cmd+K` when search input loses focus
+- 7cbf5d9: rename input placeholder to "Rechercher documents..." in french
+- 35d4fd1: fix `<summary />` when children contains `<p />`
+- 89bbe4c: fix filetree for 2 folders
+- Updated dependencies [9bd2d59]
+- Updated dependencies [c2287e1]
+- Updated dependencies [90cb6b8]
+  - nextra@2.2.18
+
+## 2.2.17
+
+### Patch Changes
+
+- Updated dependencies [4a66366]
+  - nextra@2.2.17
+
+## 2.2.16
+
+### Patch Changes
+
+- b94245a: Reverts #1417 "force theme to light if darkMode: false was set"
+- d495e5f: introduce `_app.mdx` for better performance and smallest `.next/static/chunks` size
+- Updated dependencies [d495e5f]
+  - nextra@2.2.16
+
+## 2.2.15
+
+### Patch Changes
+
+- 71c1897: export `<Card />`, `<Cards >/`, `<Steps />` and `<FileTree />`
+- 51ec00f: fix white appearing of white square while sidebar was toggled
+- 2e441b7: open http:// links in new window
+- 7f697e9: prefer `asPath` over `route` in `useNextSeoProps` docs, allow `void` as return type of `useNextSeoProps`
+- 016828e: do not redirect .mp4 in locales middleware
+- da585a8: force theme to `light` if `darkMode: false` was set
+- 863a750: Fixed x overflow in Callouts for long latex
+- eae1993: Fix the capital letter M is displayed incorrectly on Xiaomi phones
+- ad8625c: bump @headlessui/react to ^1.7.10
+- 673a125: fix squeezed sidebar when he was hidden -> navigated to page without sidebar -> comeback to page with sidebar
+- 26c7e20: fix: move intersection observe and slugs into ActiveAnchorProvider
+- 3e9e54f: hide unnecessary parts of the pages when being printed
+- Updated dependencies [d5aa17c]
+- Updated dependencies [016828e]
+- Updated dependencies [b3219c3]
+  - nextra@2.2.15
+
 ## 2.2.14
 
 ### Patch Changes

@@ -4,12 +4,8 @@ import type { PageOpts, PageMapItem, FrontMatter } from 'nextra'
 import { ThemeProvider } from 'next-themes'
 import type { Context } from '../types'
 import type { DocsThemeConfig } from '../constants'
-import {
-  DEEP_OBJECT_KEYS,
-  DEFAULT_THEME,
-  metaSchema,
-  themeSchema
-} from '../constants'
+import { DEEP_OBJECT_KEYS, DEFAULT_THEME, themeSchema } from '../constants'
+import { metaSchema } from 'nextra/normalize-pages'
 import { MenuProvider } from './menu'
 import type { ZodError } from 'zod'
 
@@ -120,7 +116,7 @@ export const ConfigProvider = ({
       disableTransitionOnChange
       defaultTheme={nextThemes.defaultTheme}
       storageKey={nextThemes.storageKey}
-      forcedTheme={theme.darkMode ? nextThemes.forcedTheme : 'light'}
+      forcedTheme={nextThemes.forcedTheme}
     >
       <ConfigContext.Provider value={extendedConfig}>
         <MenuProvider value={{ menu, setMenu }}>{children}</MenuProvider>

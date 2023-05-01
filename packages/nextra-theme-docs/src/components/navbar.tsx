@@ -4,8 +4,9 @@ import { Menu, Transition } from '@headlessui/react'
 import { ArrowRightIcon, MenuIcon } from 'nextra/icons'
 
 import { useConfig, useMenu } from '../contexts'
-import type { Item, PageItem, MenuItem} from '../utils';
-import { renderComponent, useFSRoute } from '../utils'
+import type { Item, PageItem, MenuItem } from 'nextra/normalize-pages'
+import { renderComponent } from '../utils'
+import { useFSRoute } from 'nextra/hooks'
 import { Anchor } from './anchor'
 
 export type NavBarProps = {
@@ -87,7 +88,7 @@ export function Navbar({ flatDirectories, items }: NavBarProps): ReactElement {
   const { menu, setMenu } = useMenu()
 
   return (
-    <div className="nextra-nav-container nx-sticky nx-top-0 nx-z-20 nx-w-full nx-bg-transparent">
+    <div className="nextra-nav-container nx-sticky nx-top-0 nx-z-20 nx-w-full nx-bg-transparent print:nx-hidden">
       <div
         className={cn(
           'nextra-nav-container-blur',
