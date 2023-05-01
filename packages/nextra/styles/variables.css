@@ -11,38 +11,39 @@
   --shiki-token-punctuation: oklch(24.78% 0 0);
   --shiki-token-link: var(--shiki-token-string);
 
-  --shiki-color-ansi-black: #333333;
-  --shiki-color-ansi-black-dim: #33333380;
-  --shiki-color-ansi-red: #D32F2F;
-  --shiki-color-ansi-red-dim: #D32F2F80;
-  --shiki-color-ansi-green: #77cc00;
-  --shiki-color-ansi-green-dim: #77cc0080;
-  --shiki-color-ansi-yellow: #f29718;
-  --shiki-color-ansi-yellow-dim: #f2971880;
-  --shiki-color-ansi-blue: #1976D2; /* TODO verify */
-  --shiki-color-ansi-blue-dim: #1976D280;
-  --shiki-color-ansi-magenta: #9966cc;
-  --shiki-color-ansi-magenta-dim: #9966cc80;
-  --shiki-color-ansi-cyan: #4dbf99;
-  --shiki-color-ansi-cyan-dim: #4dbf9980;
-  --shiki-color-ansi-white: #c7c7c7;
-  --shiki-color-ansi-white-dim: #c7c7c780;
-  --shiki-color-ansi-bright-black: #a1a1a1;
-  --shiki-color-ansi-bright-black-dim: #a1a1a180;
-  --shiki-color-ansi-bright-red: #d6656a;
-  --shiki-color-ansi-bright-red-dim: #d6656a80;
-  --shiki-color-ansi-bright-green: #a3d900;
-  --shiki-color-ansi-bright-green-dim: #a3d90080;
-  --shiki-color-ansi-bright-yellow: #e7c547;
-  --shiki-color-ansi-bright-yellow-dim: #e7c54780;
-  --shiki-color-ansi-bright-blue: #1976D2;
-  --shiki-color-ansi-bright-blue-dim: #1976D280;
-  --shiki-color-ansi-bright-magenta: #a37acc;
-  --shiki-color-ansi-bright-magenta-dim: #a37acc80;
-  --shiki-color-ansi-bright-cyan: #57d9ad;
-  --shiki-color-ansi-bright-cyan-dim: #57d9ad80;
-  --shiki-color-ansi-bright-white: #7E7E7E;
-  --shiki-color-ansi-bright-white-dim: #7E7E7E80;
+  /* from github-light */
+  --shiki-color-ansi-black: #24292e;
+  --shiki-color-ansi-black-dim: #24292e80;
+  --shiki-color-ansi-red: #d73a49;
+  --shiki-color-ansi-red-dim: #d73a4980;
+  --shiki-color-ansi-green: #28a745;
+  --shiki-color-ansi-green-dim: #28a74580;
+  --shiki-color-ansi-yellow: #dbab09;
+  --shiki-color-ansi-yellow-dim: #dbab0980;
+  --shiki-color-ansi-blue: #0366d6;
+  --shiki-color-ansi-blue-dim: #0366d680;
+  --shiki-color-ansi-magenta: #5a32a3;
+  --shiki-color-ansi-magenta-dim: #5a32a380;
+  --shiki-color-ansi-cyan: #1b7c83;
+  --shiki-color-ansi-cyan-dim: #1b7c8380;
+  --shiki-color-ansi-white: #6a737d;
+  --shiki-color-ansi-white-dim: #6a737d80;
+  --shiki-color-ansi-bright-black: #959da5;
+  --shiki-color-ansi-bright-black-dim: #959da580;
+  --shiki-color-ansi-bright-red: #cb2431;
+  --shiki-color-ansi-bright-red-dim: #cb243180;
+  --shiki-color-ansi-bright-green: #22863a;
+  --shiki-color-ansi-bright-green-dim: #22863a80;
+  --shiki-color-ansi-bright-yellow: #b08800;
+  --shiki-color-ansi-bright-yellow-dim: #b0880080;
+  --shiki-color-ansi-bright-blue: #005cc5;
+  --shiki-color-ansi-bright-blue-dim: #005cc580;
+  --shiki-color-ansi-bright-magenta: #5a32a3;
+  --shiki-color-ansi-bright-magenta-dim: #5a32a380;
+  --shiki-color-ansi-bright-cyan: #3192aa;
+  --shiki-color-ansi-bright-cyan-dim: #3192aa80;
+  --shiki-color-ansi-bright-white: #d1d5da;
+  --shiki-color-ansi-bright-white-dim: #d1d5da80;
 }
 
 .dark {
@@ -57,5 +58,37 @@
   --shiki-token-punctuation: oklch(79.21% 0 0);
   --shiki-token-link: var(--shiki-token-string);
 
-  /* TODO: ANSI colors */
+  /* from github-dark */
+  --shiki-color-ansi-black: #586069;
+  --shiki-color-ansi-black-dim: #58606980;
+  --shiki-color-ansi-red: #ea4a5a;
+  --shiki-color-ansi-red-dim: #ea4a5a80;
+  --shiki-color-ansi-green: #34d058;
+  --shiki-color-ansi-green-dim: #34d05880;
+  --shiki-color-ansi-yellow: #ffea7f;
+  --shiki-color-ansi-yellow-dim: #ffea7f80;
+  --shiki-color-ansi-blue: #2188ff;
+  --shiki-color-ansi-blue-dim: #2188ff80;
+  --shiki-color-ansi-magenta: #b392f0;
+  --shiki-color-ansi-magenta-dim: #b392f080;
+  --shiki-color-ansi-cyan: #39c5cf;
+  --shiki-color-ansi-cyan-dim: #39c5cf80;
+  --shiki-color-ansi-white: #d1d5da;
+  --shiki-color-ansi-white-dim: #d1d5da80;
+  --shiki-color-ansi-bright-black: #959da5;
+  --shiki-color-ansi-bright-black-dim: #959da580;
+  --shiki-color-ansi-bright-red: #f97583;
+  --shiki-color-ansi-bright-red-dim: #f9758380;
+  --shiki-color-ansi-bright-green: #85e89d;
+  --shiki-color-ansi-bright-green-dim: #85e89d80;
+  --shiki-color-ansi-bright-yellow: #ffea7f;
+  --shiki-color-ansi-bright-yellow-dim: #ffea7f80;
+  --shiki-color-ansi-bright-blue: #79b8ff;
+  --shiki-color-ansi-bright-blue-dim: #79b8ff80;
+  --shiki-color-ansi-bright-magenta: #b392f0;
+  --shiki-color-ansi-bright-magenta-dim: #b392f080;
+  --shiki-color-ansi-bright-cyan: #56d4dd;
+  --shiki-color-ansi-bright-cyan-dim: #56d4dd80;
+  --shiki-color-ansi-bright-white: #fafbfc;
+  --shiki-color-ansi-bright-white-dim: #fafbfc80;
 }
